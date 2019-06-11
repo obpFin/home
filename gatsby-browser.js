@@ -1,4 +1,4 @@
-require('./src/global.scss')
+require('./src/styles/global.scss')
 
 /**
  * Implement Gatsby's Browser APIs in this file.

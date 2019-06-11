@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap');
+@import './mixins';
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+}
