@@ -26,9 +26,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="content">
-          <main>{children}</main>
+        <div className="layout">
+          <div className="content">
+            <Header siteTitle={data.site.siteMetadata.title} />
+            <main>{children}</main>
+          </div>
           <footer>
             © {data.site.siteMetadata.author} {new Date().getFullYear()}, Built with
             {` `}
