@@ -4,9 +4,14 @@ header {
   // background: #d0d0d0;
   margin-bottom: 3.45rem;
 
-  h1 a {
-    @include title;
-  }
+  h1 {
+    @media only screen and (max-width: 480px) {
+      margin: 10px 0;
+    }
+    a {
+      @include title;
+    }
+  } 
   .nav--list {
     display: flex;
     list-style: none;
@@ -14,14 +19,20 @@ header {
 
     .nav--item {
       color: #999999;
-      font-size: .9rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
       margin-right: 1.3rem;
+      letter-spacing: 1px;
       text-decoration: none;
+      @media only screen and (max-width: 480px) {
+        font-size: 1rem;
+      }
       &:hover {
         color: #666666;
       }
       &.active {
         color: #333333;
+        font-weight: bold;
       }
     }
   }
