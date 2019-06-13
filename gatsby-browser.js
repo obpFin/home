@@ -1,5 +1,5 @@
-require('./src/styles/global.scss')
-
+import 'normalize.css'; 
+import './src/styles/global.scss'
 /**
  * Implement Gatsby's Browser APIs in this file.
  *
