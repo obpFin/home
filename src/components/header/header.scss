@@ -3,6 +3,10 @@
 header {
   // background: #d0d0d0;
   margin-bottom: 3.45rem;
+
+  h1 a {
+    @include title;
+  }
   .nav--list {
     display: flex;
     list-style: none;
