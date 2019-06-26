@@ -1,0 +1,17 @@
+@import "../../styles/mixins";
+
+div.card {
+  position: relative;
+  height: 20rem;
+  width: 18rem;
+  background: #EDEDED;
+  margin-bottom: 2rem;
+
+  ul {
+    li {
+      @include text-bread;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
