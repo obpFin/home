@@ -33,7 +33,7 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <div style={{display: "grid"}}>{renderPosts()}</div>
+      <div className="projects grid">{renderPosts()}</div>
     </Layout>
   )
 }

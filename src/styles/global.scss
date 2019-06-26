@@ -17,6 +17,10 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   cursor: pointer;
 }
 
+ul {
+  list-style-type:none;
+}
+
 .layout {
   margin: 0 auto;
   max-width: 750px;
@@ -26,7 +30,8 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   min-height: 100vh;
 
   main {
-    margin-left: 40px;
+    // margin-left: 40px;
+    padding: 2rem;
     @media only screen and (max-width: 480px) {
       margin-left: 0;
     }
@@ -38,4 +43,13 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   footer {
     margin-top: 3rem;
   }
+}
+
+.grid {
+  display: grid;
+}
+
+.projects {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
 }
