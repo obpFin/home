@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Card from "../components/card/card"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -23,21 +24,16 @@ const ProjectsPage = () => {
     }
   `)
   const renderPosts = () => {
-    return data.allMarkdownRemark.edges.map((post, i) => (
-      <li key={i} className="post">
-        <Link to={`/projects/${post.node.fields.slug}`}>
-          <h2 href={`/projects/${post.node.fields.slug}`}>{post.node.frontmatter.title}</h2>
-          <p>{post.node.frontmatter.date}</p>
-        </Link>
-
-      </li>
+    return data.allMarkdownRemark.edges.map((data, i) => (
+      <Link key={i} to={`/projects/${data.node.fields.slug}`}>
+        <Card data={data}/>
+      </Link>
     ))
   }
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Blog page</h1>
-      <ul>{renderPosts()}</ul>
+      <div style={{display: "grid"}}>{renderPosts()}</div>
     </Layout>
   )
 }
