@@ -14,6 +14,7 @@ const ProjectsPage = () => {
             frontmatter {
               title
               date
+              tags
             }
             fields {
               slug

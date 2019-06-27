@@ -9,7 +9,7 @@ const Card = (props) => (
       <Image filename="placeholder.jpg" alt={props.data.node.frontmatter.title}/>
       <ul>
         <li>{props.data.node.frontmatter.title}</li>
-        <li>{props.data.node.frontmatter.date}</li>
+        <li>{props.data.node.frontmatter.tags.map(t => <span>{t}</span>)}</li>
       </ul>
   </div>
 )

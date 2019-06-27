@@ -11,6 +11,11 @@ div.card {
     li {
       @include text-bread;
       margin-bottom: 1rem;
+
+      span {
+        opacity: .7;
+        padding: 0 5px;
+      }
     }
   }
 }
