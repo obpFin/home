@@ -21,6 +21,12 @@ ul {
   list-style-type:none;
 }
 
+footer {
+  @media only screen and (max-width: 480px) {
+    text-align: center;
+  }
+}
+
 .layout {
   margin: 0 auto;
   max-width: 750px;
@@ -28,12 +34,19 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  @media only screen and (max-width: 780px) {
+    padding: 0 40px;
+  }
+  @media only screen and (max-width: 480px) {
+      padding: 0;
+  }
 
   main {
     // margin-left: 40px;
     padding: 2rem;
     @media only screen and (max-width: 480px) {
       margin-left: 0;
+      padding: 0 2rem;
     }
   }
 
@@ -47,6 +60,9 @@ ul {
 
 .grid {
   display: grid;
+  @media only screen and (max-width: 480px) {
+    display: block;
+  }
 }
 
 .projects {
