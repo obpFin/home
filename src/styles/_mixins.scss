@@ -11,3 +11,18 @@
     font-size: 2rem;
   }
 }
+
+@mixin text-bread {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+}
+
+@mixin text-header {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
