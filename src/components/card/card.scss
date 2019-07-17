@@ -8,13 +8,18 @@ div.card {
   margin-bottom: 2rem;
 
   ul {
-    li {
-      @include text-bread;
+    > li {
       margin-bottom: 1rem;
       &.card--title {
+        @include text-header;
+        text-align: center;
+        padding-top: 20px;
+      }
+      &.card--text {
+        @include text-bread;
+        padding: 10px;
         font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        justify-content: space-around;
       }
 
       span {

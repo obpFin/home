@@ -6,10 +6,10 @@ import './card.scss'
 
 const Card = (props) => (
   <div className="card">
-      <Image filename="placeholder.jpg" alt={props.data.node.frontmatter.title}/>
+      <Image filename={`${props.data.node.fields.slug}.png`} alt={props.data.node.frontmatter.title}/>
       <ul>
         <li className="card--title">{props.data.node.frontmatter.title}</li>
-        <li className="card--date">{props.data.node.frontmatter.tags.map(t => <span>{t}</span>)}</li>
+        <li className="card--text">{props.data.node.frontmatter.tags.map(t => <span key={t}> &#8251; {t}  </span>)}</li>
       </ul>
   </div>
 )
