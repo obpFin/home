@@ -1,0 +1,38 @@
+div.project {
+  h1 {
+    font-size: 4rem;
+  }
+  .content {
+    > div {
+      margin-bottom: 20px;
+      h2, li {
+        opacity: .8;
+        // color: grey;
+        font-weight: normal;
+      }
+    }
+    h2 {
+      display: inline-block;
+      padding-left: 10px;
+      transform: translateY(-3px); 
+    }
+    .tags {
+      ul {
+        padding-left: 7px;
+        li {
+          display: inline-block;
+          padding-left: 3px;
+          &:not(:last-child):after {
+            content: ' |';
+          }
+        }
+      }
+    }
+    .date h2 {
+      margin: 0;
+    }
+    .text {
+      
+    }
+  }
+}

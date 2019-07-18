@@ -1,22 +1,35 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/layout"
+import { Calendar, Tag } from 'react-feather';
+
+import '../styles/blogPost.scss'
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+    <Layout>
+      <div className="project">
+        <div className="content">
+          <h1>{frontmatter.title}</h1>
+          <div className="date row"><Calendar/><h2>{frontmatter.date}</h2></div>
+          <div className="tags row">
+            <Tag/>
+            <ul>
+              {frontmatter.tags.map(t => <li key={t}>{t}</li>)}
+            </ul>
+          </div>
+          <div
+            id="text"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
@@ -34,6 +47,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        tags
       }
       html
     }
