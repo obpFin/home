@@ -17,10 +17,10 @@ const Header = ({ siteTitle }) => (
           <Link className="nav--item" activeClassName="active" to="/">Home</Link>
         </li>
         <li>
-          <Link className="nav--item" activeClassName="active" to="/blog">Blog</Link>
+          <Link className="nav--item" activeClassName="active" to="/blog" partiallyActive={true}>Blog</Link>
         </li>
         <li>
-          <Link className="nav--item" activeClassName="active" to="/projects">Projects</Link>
+          <Link className="nav--item" activeClassName="active" to="/projects" partiallyActive={true}>Projects</Link>
         </li>
       </ul>
     </nav>
