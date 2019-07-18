@@ -2,18 +2,18 @@
 
 div.card {
   position: relative;
-  height: 20rem;
-  width: 18rem;
   background: #EDEDED;
-  margin-bottom: 2rem;
   transition: all .2s ease-in-out;
   &:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    ul li.card--title {
+      font-size: 1.9rem;
+    }
   }
   ul {
     > li {
-      margin-bottom: 1rem;
       &.card--title {
+        transition: all .2s ease-in-out;
         @include text-header;
         text-align: center;
         padding-top: 20px;
@@ -21,7 +21,7 @@ div.card {
       &.card--text {
         @include text-bread;
         color: rgb(85, 26, 139);
-        padding: 10px;
+        padding: 1.5rem;
         font-weight: bold;
         display: flex;
         justify-content: space-around;
