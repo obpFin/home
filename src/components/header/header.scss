@@ -9,13 +9,17 @@ header {
       margin: 10px 0 10px 40px;
     }
     a {
-      @include title;
+      @include site-title;
     }
   } 
   .nav--list {
     display: flex;
     list-style: none;
     margin: 0;
+
+    @media only screen and (max-width: 480px) {
+      margin-left: 40px;
+    }
 
     .nav--item {
       color: #999999;
