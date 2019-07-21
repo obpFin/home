@@ -5,7 +5,7 @@ div.project {
     @include post-title;
   }
   .content {
-    > div {
+    > section {
       margin-bottom: 20px;
       h2, li {
         opacity: .7;
@@ -15,6 +15,7 @@ div.project {
     }
     .gatsby-image-wrapper {
       max-width: 100%;
+      margin-top: 2rem;
     }
     h2 {
       display: inline-block;
@@ -36,8 +37,10 @@ div.project {
     .date h2 {
       margin: 0;
     }
-    .text {
-      
+    #text {
+      p {
+        @include text-bread;
+      }
     }
   }
 }

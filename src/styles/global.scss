@@ -7,9 +7,9 @@ h1, h2, h3, p, li, a {
 }
 
 p, a, li {
-  font-size: 1.2rem;
+  font-size: 2rem;
   @media only screen and (max-width: 480px) {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -27,6 +27,10 @@ ul {
 footer {
   @media only screen and (max-width: 480px) {
     text-align: center;
+  }
+  p, a { 
+    font-size: 1.2rem;
+
   }
 }
 
