@@ -1,15 +1,20 @@
+@import './src/styles/mixins.scss';
+
 div.project {
   h1 {
-    font-size: 4rem;
+    @include post-title;
   }
   .content {
     > div {
       margin-bottom: 20px;
       h2, li {
-        opacity: .8;
+        opacity: .7;
         // color: grey;
         font-weight: normal;
       }
+    }
+    .gatsby-image-wrapper {
+      max-width: 100%;
     }
     h2 {
       display: inline-block;

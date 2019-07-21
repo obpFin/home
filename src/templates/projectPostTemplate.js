@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Image from "../components/image"
 
 import Layout from "../components/layout"
 import { Calendar, Tag } from 'react-feather';
@@ -10,7 +11,7 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, fields } = markdownRemark
   return (
     <Layout>
       <div className="project">
@@ -23,6 +24,7 @@ export default function Template({
               {frontmatter.tags.map(t => <li key={t}>{t}</li>)}
             </ul>
           </div>
+          <Image filename={`${fields.slug}.png`} alt={frontmatter.title}/>
           <div
             id="text"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -48,6 +50,9 @@ export const query = graphql`
         title
         date
         tags
+      }
+      fields {
+        slug
       }
       html
     }
