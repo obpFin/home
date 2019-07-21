@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Image from "../components/image"
 
 import Layout from "../components/layout"
-import { Calendar, Tag } from 'react-feather';
+import { Calendar, Tag, ArrowLeft } from 'react-feather';
 
 import '../styles/blogPost.scss'
 
@@ -16,19 +16,23 @@ export default function Template({
     <Layout>
       <div className="project">
         <div className="content">
-          <h1>{frontmatter.title}</h1>
-          <div className="date row"><Calendar/><h2>{frontmatter.date}</h2></div>
-          <div className="tags row">
-            <Tag/>
-            <ul>
-              {frontmatter.tags.map(t => <li key={t}>{t}</li>)}
-            </ul>
-          </div>
-          <Image filename={`${fields.slug}.png`} alt={frontmatter.title}/>
-          <div
+          <section>
+            <h1>{frontmatter.title}</h1>
+            <div className="date row"><Calendar/><h2>{frontmatter.date}</h2></div>
+            <div className="tags row">
+              <Tag/>
+              <ul>
+                {frontmatter.tags.map(t => <li key={t}>{t}</li>)}
+              </ul>
+            </div>
+            <Image filename={`${fields.slug}.png`} alt={frontmatter.title}/>
+          </section>
+          <section
             id="text"
             dangerouslySetInnerHTML={{ __html: html }}
-          />
+          >
+          </section>
+          <Link to="/blog"><ArrowLeft/> blog index</Link>
         </div>
       </div>
     </Layout>
@@ -48,8 +52,15 @@ export const query = graphql`
     ) {
       frontmatter {
         title
-        date
+        date(formatString: "DD MMMM, YYYY")
         tags
+        featuredImage {
+          childImageSharp{
+              sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+              }
+          }
+      }
       }
       fields {
         slug

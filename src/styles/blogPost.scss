@@ -13,6 +13,12 @@ div.project {
         font-weight: normal;
       }
     }
+    > a {
+      font-size: 22px;
+      svg {
+        transform: translateY(3px); 
+      }
+    }
     .gatsby-image-wrapper {
       max-width: 100%;
       margin-top: 2rem;
