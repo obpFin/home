@@ -32,7 +32,7 @@ export default function Template({
             dangerouslySetInnerHTML={{ __html: html }}
           >
           </section>
-          <Link to="/blog"><ArrowLeft/> blog index</Link>
+          <Link to="/projects"><ArrowLeft/> projects index</Link>
         </div>
       </div>
     </Layout>
