@@ -10,7 +10,12 @@ div.card {
       font-size: 1.9rem;
     }
   }
+  .gatsby-image-wrapper {
+    height: 250px;
+  }
   ul {
+    border-top: 1px solid black;
+    height: 160px;
     > li {
       &.card--title {
         transition: all .2s ease-in-out;
@@ -18,17 +23,19 @@ div.card {
         text-align: center;
         padding-top: 20px;
       }
-      &.card--text {
+      &.card--text div {
         font-size: 1.5rem;
         color: rgb(85, 26, 139);
-        padding: 1.5rem;
+        padding: 15px;
         font-weight: bold;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
       }
       span {
+        flex: auto;
         opacity: .7;
-        padding-right: 5px;
+        padding-right: 20px;
       }
     }
   }
