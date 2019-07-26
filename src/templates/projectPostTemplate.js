@@ -54,13 +54,13 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM, YYYY")
         tags
-        featuredImage {
-          childImageSharp{
-              sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
-              }
-          }
-      }
+        # featuredImage {
+        #   childImageSharp{
+        #       sizes(maxWidth: 630) {
+        #           ...GatsbyImageSharpSizes
+        #       }
+        #   }
+      #}
       }
       fields {
         slug

@@ -2,7 +2,6 @@
 path: "/projects/gitmojo"
 date: "2019-06-28"
 title: "Github Mojo"
-featuredImage: "./ghmojo.png"
 tags: ["vue", "circleci", "s3"]
 ---
 

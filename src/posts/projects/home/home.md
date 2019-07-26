@@ -2,7 +2,6 @@
 path: "/projects/home"
 date: "2019-07-26"
 title: "Home"
-featuredImage: "./ghmojo.png"
 tags: ["Gatsbyjs"]
 ---
 
