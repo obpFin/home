@@ -9,9 +9,13 @@ div.card {
     ul li.card--title {
       font-size: 1.9rem;
     }
+    .gatsby-image-wrapper {
+      opacity: 1;
+    }
   }
   .gatsby-image-wrapper {
     height: 250px;
+    opacity: .8;
   }
   ul {
     border-top: 1px solid black;
@@ -24,9 +28,9 @@ div.card {
         padding-top: 20px;
       }
       &.card--text div {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: rgb(85, 26, 139);
-        padding: 15px;
+        padding: 20px;
         font-weight: bold;
         display: flex;
         flex-wrap: wrap;

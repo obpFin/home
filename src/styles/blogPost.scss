@@ -55,6 +55,7 @@ div.project {
       margin: 0;
     }
     #text {
+      margin: 60px 0;
       p {
         @include text-bread;
       }
