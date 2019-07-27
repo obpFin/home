@@ -5,8 +5,6 @@ import Image from "../components/image"
 import Layout from "../components/layout"
 import { Calendar, Tag, ArrowLeft } from 'react-feather';
 
-import '../styles/blogPost.scss'
-
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
