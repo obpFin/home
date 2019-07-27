@@ -2,11 +2,14 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { ShellBlock } from "../components/shellBlock/shellBlock"
 
 const MePage = () => (
   <Layout>
     <SEO title="Me" />
-    <h1>Me page</h1>
+    <div className="me">
+      <ShellBlock>whois oskaripeltonen</ShellBlock>
+    </div>
   </Layout>
 )
 
