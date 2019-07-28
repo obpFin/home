@@ -9,6 +9,7 @@ const MePage = () => (
     <SEO title="Me" />
     <div className="me">
       <ShellBlock>whois oskaripeltonen</ShellBlock>
+      <p>Me page</p>
     </div>
   </Layout>
 )
