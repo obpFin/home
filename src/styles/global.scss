@@ -5,8 +5,13 @@
 @import './blogPost';
 @import './me';
 
-h1, h2, h3, p, li, a {
+h1, h2, h3, p, li, a, i {
   font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+h2 {
+  font-size: 2.2rem;
 }
 
 p, a, li {
