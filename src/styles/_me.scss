@@ -1,5 +1,14 @@
 div.me {
-  .whois {
+  .me--interests {
+    > div {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      .gatsby-image-wrapper {
+        width: 45px;
+        margin: 0 20px 5px 0;
+      }
+    }
 
   }
 }
