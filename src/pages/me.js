@@ -5,7 +5,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import { ShellBlock } from "../components/shellBlock/shellBlock"
 
-const interestsIcons = ['gaming.png', 'exercising.png', 'music.png', 'photography.png']
+const interestsIcons = ['travel.png', 'gaming.png', 'exercising.png', 'music.png', 'photography.png']
 
 const MePage = () => (
   <Layout>
@@ -14,8 +14,8 @@ const MePage = () => (
       <section>
         <ShellBlock>whois oskaripeltonen</ShellBlock>
         <p>Born and raised in the great city of Pori, Finland. Moved to Capitol area in 2017, currently living in Helsinki.</p>
-        <h2>Interests</h2>
         <div className="me--interests">
+          <h2>Interests</h2>
           {interestsIcons.map(i => {
             return (
               <div>

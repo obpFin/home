@@ -1,12 +1,44 @@
 div.me {
+  background: black;
+  > section p {
+    color: white;
+    margin: 40px;
+    font-style: italic;
+    @media only screen and (max-width: 480px) {
+      margin: 20px;
+      font-size: 1rem;
+    }
+  }
   .me--interests {
+    background: white;
+    border: solid 1px black;
+    display: inline-block;
+    padding: 10px 3rem;
+    box-sizing: border-box;
+    h2 {
+      margin: 20px;
+    }
+    
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
     > div {
+      margin: 10px 0;
       display: flex;
       align-items: center;
       text-transform: uppercase;
       .gatsby-image-wrapper {
         width: 45px;
         margin: 0 20px 5px 0;
+      }
+      @media only screen and (max-width: 480px) {
+        i {
+          font-size: 1rem;
+        }
       }
     }
 
