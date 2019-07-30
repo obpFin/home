@@ -13,7 +13,7 @@ const MePage = () => (
     <div className="me">
       <section>
         <ShellBlock>whois oskaripeltonen</ShellBlock>
-        <p>Born and raised in the great city of Pori, Finland. Moved to Capitol area in 2017, currently living in Helsinki.</p>
+        <p className="mono">Born and raised in the great city of Pori, Finland. Moved to Capitol area in 2017, currently living in Helsinki.</p>
         <div className="me--interests">
           <h2>Interests</h2>
           {interestsIcons.map(i => {

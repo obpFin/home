@@ -3,7 +3,10 @@ div.me {
   > section p {
     color: white;
     margin: 40px;
-    font-style: italic;
+    // font-style: italic;
+    &.mono {
+      font-family: 'Ubuntu Mono', monospace;
+    }
     @media only screen and (max-width: 480px) {
       margin: 20px;
       font-size: 1rem;
