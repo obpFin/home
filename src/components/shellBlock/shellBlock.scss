@@ -7,4 +7,11 @@ div.shell-block {
     font-family: 'Ubuntu Mono', monospace;
     margin: 0;
   }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+
 }
