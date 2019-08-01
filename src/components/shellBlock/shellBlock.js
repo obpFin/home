@@ -5,7 +5,7 @@ import "./shellBlock.scss"
 
 export const ShellBlock = (props) => (
   <div className="shell-block">
-    <h1>{`[~]$ ${props.children}`}</h1>
+    <h1 className="mono">{`[~]$ ${props.children}`}</h1>
   </div>
 )
 
