@@ -4,9 +4,6 @@ div.me {
     color: white;
     margin: 40px;
     // font-style: italic;
-    &.mono {
-      font-family: 'Ubuntu Mono', monospace;
-    }
     @media only screen and (max-width: 480px) {
       margin: 20px;
       font-size: 1rem;
@@ -44,6 +41,12 @@ div.me {
         }
       }
     }
-
+  }
+  .me--social {
+    color: white;
+    svg {
+      height: 40px;
+      width: 40px;
+    }
   }
 }

@@ -8,6 +8,12 @@
 h1, h2, h3, p, li, a, i {
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1.2px;
+  &.mono {
+    font-family: 'Ubuntu Mono', monospace;
+  }
+  &.white {
+    color: white;
+  }
 }
 
 h2 {
@@ -25,6 +31,9 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   text-decoration: none; 
   color: rgb(85, 26, 139);
   cursor: pointer;
+  &.white {
+    color: white;
+  }
 }
 
 ul {
