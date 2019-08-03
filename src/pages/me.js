@@ -15,8 +15,8 @@ const MePage = () => (
       <section>
         <ShellBlock>whois oskaripeltonen</ShellBlock>
         <p className="mono">Born and raised in the great city of Pori, Finland. Moved to Capitol area in 2017, currently living in Helsinki.</p>
-        <div className="row">
-          <div className="me--interests">
+        <div className="row info">
+          <div className="me--interests block">
             <h2>Interests</h2>
             {interestsIcons.map(i => {
               return (
@@ -27,16 +27,16 @@ const MePage = () => (
               )
             })}
           </div>
-          <div className="me--social">
+          <div className="me--social block">
             <h2>Social</h2>
             <div className="row">
-              <a className="white" href="https://www.linkedin.com/in/oskari-peltonen/">
+              <a className="white" target="_blank" href="https://www.linkedin.com/in/oskari-peltonen/">
                 <Linkedin/>
               </a>
-              <a className="white" href="https://www.instagram.com/obp_fi/">
+              <a className="white" target="_blank" href="https://www.instagram.com/obp_fi/">
                 <Instagram/>
               </a>
-              <a className="white" href="https://github.com/obpFin">
+              <a className="white" target="_blank" href="https://github.com/obpFin">
                 <GitHub/>
               </a>
             </div>

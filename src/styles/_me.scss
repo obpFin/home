@@ -1,17 +1,27 @@
 div.me {
   background: black;
+  section {
+    border: black solid;
+  }
   > section p {
     color: white;
-    margin: 40px;
+    margin: 60px;
     // font-style: italic;
     @media only screen and (max-width: 480px) {
       margin: 20px;
       font-size: 1rem;
     }
   }
+  > section {
+    .info {
+      border-top: solid 1px white;
+      .block {
+        width: 25%;
+      }
+    } 
+  }
   .me--interests {
     background: white;
-    border: solid 1px black;
     display: inline-block;
     padding: 10px 3rem;
     box-sizing: border-box;
@@ -44,9 +54,19 @@ div.me {
   }
   .me--social {
     color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-right:  1px solid white; 
+    // border-top: 1px solid white;
     svg {
       height: 40px;
       width: 40px;
+    }
+    > div {
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 }
