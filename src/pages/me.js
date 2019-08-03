@@ -16,7 +16,7 @@ const social = {
 
 const MePage = () => (
   <Layout>
-    <SEO title="Me" />
+    <SEO title="Oskari Peltonen" />
     <div className="me">
       <section>
         <ShellBlock>whois oskaripeltonen</ShellBlock>
@@ -26,7 +26,7 @@ const MePage = () => (
             <h2>Interests</h2>
             {interestsIcons.map(i => {
               return (
-                <div>
+                <div key={i}>
                   <Image filename={i}/>
                   <i>{i.split(".")[0]}</i>
                 </div>
