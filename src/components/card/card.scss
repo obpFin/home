@@ -16,6 +16,9 @@ div.card {
   .gatsby-image-wrapper {
     height: 250px;
     opacity: .8;
+    img {
+      // object-fit: scale-down!important;
+    }
   }
   ul {
     border-top: 1px solid black;

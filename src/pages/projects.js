@@ -13,6 +13,7 @@ const ProjectsPage = () => {
           node {
             frontmatter {
               title
+              repo
               date
               tags
             }
