@@ -36,13 +36,13 @@ const MePage = () => (
           <div className="me--social block">
             <h2>Social</h2>
             <div className="row">
-              <a className="white" target="_blank" href={social.linkedin}>
+              <a className="white" target="_blank" href={social.linkedin} rel="noopener noreferrer">
                 <Linkedin/>
               </a>
-              <a className="white" target="_blank" href={social.instagram}>
+              <a className="white" target="_blank" href={social.instagram} rel="noopener noreferrer">
                 <Instagram/>
               </a>
-              <a className="white" target="_blank" href={social.github}>
+              <a className="white" target="_blank" href={social.github} rel="noopener noreferrer">
                 <GitHub/>
               </a>
             </div>
