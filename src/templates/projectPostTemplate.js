@@ -18,21 +18,18 @@ export default function Template({
         <div className="content">
           <section>
             <h1>{frontmatter.title}</h1>
-            <div className="date row"><Calendar/><h2>{frontmatter.date}</h2></div>
+            <div className="date row"><Calendar/><h2 className="light">{frontmatter.date}</h2></div>
             <div className="tags row">
               <Tag/>
               <ul>
-                {frontmatter.tags.map(t => <li key={t}>{t}</li>)}
+                {frontmatter.tags.map(t => <li className="light" key={t}>{t}</li>)}
               </ul>
             </div>
             <div className="github row">
               <GitHub/>
-              <a className="" target="_blank" href={`https://${repoUrl}`} rel="noopener noreferrer">
+              <a className="light" target="_blank" href={`https://${repoUrl}`} rel="noopener noreferrer">
                 {repoUrl}</a>
             </div>
-            {
-              
-            }
             <Image filename={`${fields.slug}.png`} alt={frontmatter.title}/>
           </section>
           <section

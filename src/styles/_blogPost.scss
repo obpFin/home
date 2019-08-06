@@ -7,8 +7,11 @@ div.project {
   .content {
     > section {
       margin-bottom: 20px;
-      h2, li, a {
+      .light {
         opacity: .7;
+      }
+      h2, li, a {
+        
         // color: grey;
         font-weight: normal;
       }
@@ -20,6 +23,7 @@ div.project {
       }
       svg {
         transform: translateY(6px); 
+        opacity: 0.8;
       }
     }
     .row {
