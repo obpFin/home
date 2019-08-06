@@ -5,6 +5,7 @@ title: "Home"
 repo: "home"
 tags: ["Gatsbyjs"]
 ---
+*Work in progress*<br>
 
 This project is, you guessed it, the site you're looking at! I got the idea when looking into Gatsby.js, I figured Gatsby would be a perfect fit for my personal page.
 

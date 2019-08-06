@@ -6,12 +6,11 @@ repo: "yawa"
 tags: ["flutter", "dart",]
 ---
 
-The goal for this project was to learn [Vue.js](https://vuejs.org/): a lightweight open-source JavaScript framework for building user interfaces and single-page applications.
+#Yet Another Weather App
+*Work in progress*
 
-To add some automation, I decided to use [CircleCI](https://circleci.com/) for continuous integration. For hosting, I went with AWS s3.
+I know, the web and the app stores are filled with different weather apps. But they make such a nice practice apps, especially for mobile!
 
-The gist of the project is to provide detailed information of user's Github account, and a nice little game of who's got the biggest Github mojo!
-
-Check out the project in [ghmojo.com](https://www.ghmojo.com)
+Originally I started the project with [React Native](https://facebook.github.io/react-native/) but that dried out 'cause at the time I was working with RN during my 9 - 5. Now with [Flutter](https://flutter.dev/) being on my study plan this is the perfect way to continue with the project. Who knows if I have the time to polish this enough to publish it in the iOS/play stores.
 
 
