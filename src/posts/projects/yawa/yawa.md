@@ -1,9 +1,9 @@
 ---
-path: "/projects/gitmojo"
-date: "2019-06-28"
-title: "Github Mojo"
-repo: "git-mojo"
-tags: ["vue", "circleci", "s3"]
+path: "/projects/yawa"
+date: "2019-08-06"
+title: "Yawa"
+repo: "yawa"
+tags: ["flutter", "dart",]
 ---
 
 The goal for this project was to learn [Vue.js](https://vuejs.org/): a lightweight open-source JavaScript framework for building user interfaces and single-page applications.

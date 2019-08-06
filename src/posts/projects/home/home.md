@@ -2,6 +2,7 @@
 path: "/projects/home"
 date: "2019-07-26"
 title: "Home"
+repo: "home"
 tags: ["Gatsbyjs"]
 ---
 
