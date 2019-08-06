@@ -85,9 +85,6 @@ footer {
 
 .grid {
   display: grid;
-  @media only screen and (max-width: 480px) {
-    display: block;
-  }
 }
 
 .row {
