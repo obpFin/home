@@ -3,6 +3,11 @@ div.me {
   section {
     border: black solid;
   }
+  svg, picture img {
+    height: 40px!important;
+    width: 40px!important;
+    transform: translateY(6px); 
+  }
   > section p {
     color: white;
     margin: 60px;
@@ -18,18 +23,25 @@ div.me {
       .block {
         width: 25%;
       }
+      @media only screen and (max-width: 480px) {
+        display: block;
+        .block {
+          width: 100%;
+        }
+      }
     } 
   }
   .me--interests {
     background: white;
     display: inline-block;
     padding: 10px 3rem;
-    box-sizing: border-box;
     h2 {
+      text-align: center;
       margin: 20px;
     }
     
     @media only screen and (max-width: 480px) {
+      box-sizing: border-box;
       width: 100%;
       p {
         font-size: 1.2rem;
@@ -47,7 +59,7 @@ div.me {
       }
       @media only screen and (max-width: 480px) {
         i {
-          font-size: 1rem;
+          font-size: 14x;
         }
       }
     }
@@ -58,15 +70,19 @@ div.me {
     display: flex;
     flex-direction: column;
     border-right:  1px solid white; 
-    // border-top: 1px solid white;
-    svg {
-      height: 40px;
-      width: 40px;
+    padding: 10px 3rem;
+    @media only screen and (max-width: 480px) {
+      box-sizing: border-box;
     }
     > div {
       flex: 1;
       flex-direction: column;
       justify-content: space-around;
+      a {
+        @media only screen and (max-width: 480px) {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
