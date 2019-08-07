@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import { ShellBlock } from "../components/shellBlock/shellBlock"
-import { Linkedin, Instagram, GitHub } from 'react-feather'
+import { Linkedin, Instagram, GitHub, Youtube } from 'react-feather'
 
 const interestsIcons = ['travel.png', 'gaming.png', 'exercising.png', 'music.png', 'photography.png']
 const introduction = "Born and raised in the great city of Pori, Finland. Moved to Capitol area in 2017, currently living in Helsinki."
@@ -42,6 +42,9 @@ const MePage = () => (
               </a>
               <a className="white" target="_blank" href={social.instagram} rel="noopener noreferrer">
                 <Instagram/>
+              </a>
+              <a className="white" target="_blank" href={social.youtube} rel="noopener noreferrer">
+                <Youtube/>
               </a>
               <a className="white" target="_blank" href={social.github} rel="noopener noreferrer">
                 <GitHub/>
