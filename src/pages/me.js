@@ -11,7 +11,8 @@ const introduction = "Born and raised in the great city of Pori, Finland. Moved 
 const social = {
   linkedin: "https://www.linkedin.com/in/oskari-peltonen/",
   instagram: "https://www.instagram.com/obp_fi/",
-  github: "https://github.com/obpFin"
+  github: "https://github.com/obpFin",
+  youtube: "https://www.youtube.com/user/obptube",
 }
 
 const MePage = () => (
