@@ -11,7 +11,6 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html, fields } = markdownRemark
   const repoUrl = `github.com/obpFin/${frontmatter.repo}`
-  console.log(frontmatter)
   return (
     <Layout>
       <div className="project">
@@ -37,7 +36,7 @@ export default function Template({
             dangerouslySetInnerHTML={{ __html: html }}
           >
           </section>
-          <Link to="/projects"><ArrowLeft/> projects index</Link>
+          <Link to="/projects"><ArrowLeft/>projects index</Link>
         </div>
       </div>
     </Layout>
