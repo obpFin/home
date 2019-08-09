@@ -31,13 +31,18 @@ div.me {
       }
     } 
   }
+  .me--interests, .me--career {
+    div {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
   .me--interests {
     background: white;
     display: inline-block;
     padding: 10px 3rem;
     h2 {
       text-align: center;
-      margin: 20px;
     }
     
     @media only screen and (max-width: 480px) {
@@ -52,7 +57,6 @@ div.me {
       margin: 10px 0;
       display: flex;
       align-items: center;
-      text-transform: uppercase;
       .gatsby-image-wrapper {
         width: 45px;
         margin: 0 20px 5px 0;
@@ -64,7 +68,7 @@ div.me {
       }
     }
   }
-  .me--social {
+  .me--social, .me--career {
     color: white;
     text-align: center;
     display: flex;

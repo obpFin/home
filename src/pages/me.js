@@ -14,6 +14,7 @@ const social = {
   github: "https://github.com/obpFin",
   youtube: "https://www.youtube.com/user/obptube",
 }
+const skills = ["Web development", "Mobile development", "UI design"]
 
 const MePage = () => (
   <Layout>
@@ -49,6 +50,18 @@ const MePage = () => (
               <a className="white" target="_blank" href={social.github} rel="noopener noreferrer">
                 <GitHub/>
               </a>
+            </div>
+          </div>
+          <div className="me--career block">
+            <h2>Career</h2>
+            <div className="row">
+            {skills.map(i => {
+              return (
+                <div key={i}>
+                  <i>{i}</i>
+                </div>
+              )
+            })}
             </div>
           </div>
         </div>
