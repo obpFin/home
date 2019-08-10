@@ -7,6 +7,7 @@ const BlogPage = () => (
   <Layout>
     <SEO title="Blog" />
     <h1>Blog page</h1>
+    <p>If I have something to share, they will appear here.</p>
   </Layout>
 )
 
