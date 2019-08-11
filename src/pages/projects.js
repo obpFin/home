@@ -13,6 +13,7 @@ const ProjectsPage = () => {
           node {
             frontmatter {
               title
+              path
               repo
               date
               tags
@@ -25,8 +26,9 @@ const ProjectsPage = () => {
       }
     }
   `)
+  const isProjectPost = (post) => post.node.frontmatter.path.includes('projects')
   const renderPosts = () => {
-    return data.allMarkdownRemark.edges.map((data, i) => (
+    return data.allMarkdownRemark.edges.map((data, i) => isProjectPost(data) && (
       <Link key={i} to={`/projects/${data.node.fields.slug}`}>
         <Card data={data}/>
       </Link>
