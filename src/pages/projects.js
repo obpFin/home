@@ -34,7 +34,7 @@ const ProjectsPage = () => {
   }
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Projects" />
       <div className="projects grid">{renderPosts()}</div>
     </Layout>
   )
