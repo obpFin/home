@@ -2,11 +2,11 @@
 
 div.card {
   position: relative;
-  background: #EDEDED;
-  transition: all .2s ease-in-out;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+  background: #ededed;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
   &:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     ul li.card--title {
       font-size: 1.9rem;
     }
@@ -16,17 +16,23 @@ div.card {
   }
   .gatsby-image-wrapper {
     height: 250px;
-    opacity: .8;
+    opacity: 0.8;
   }
   ul {
     border-top: 1px solid black;
-    height: 160px;
+    height: 200px;
     > li {
       &.card--title {
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         @include text-header;
-        text-align: center;
         padding-top: 20px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+
+        > div {
+        }
       }
       &.card--text div {
         font-size: 1.3rem;
@@ -44,4 +50,3 @@ div.card {
     }
   }
 }
-
