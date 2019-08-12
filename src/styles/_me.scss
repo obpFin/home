@@ -67,12 +67,14 @@ div.me {
       }
     }
   }
+  .me--social {
+    border-right:  1px solid white; 
+  }
   .me--social, .me--career {
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
-    border-right:  1px solid white; 
     padding: 10px 3rem;
     @media only screen and (max-width: 480px) {
       box-sizing: border-box;
