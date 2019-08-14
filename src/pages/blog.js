@@ -25,18 +25,35 @@ const BlogPage = () => {
       }
     }
   `)
-  const isBlogPost = (post) => post.node.frontmatter.path.includes('blog')
+  const changeCategory = () => null
+  const isBlogPost = post => post.node.frontmatter.path.includes("blog")
   const renderPosts = () => {
-    return data.allMarkdownRemark.edges.map((data, i) => isBlogPost(data) && (
-      <Link key={i} to={`/blog/${data.node.fields.slug}`}>
-        <Card data={data}/>
-      </Link>
-    ))
+    return data.allMarkdownRemark.edges.map(
+      (data, i) =>
+        isBlogPost(data) && (
+          <Link key={i} to={`/blog/${data.node.fields.slug}`}>
+            <Card data={data} />
+          </Link>
+        )
+    )
   }
   return (
     <Layout>
-      <SEO title="Blog"/>
-      <div className="projects grid">{renderPosts()}</div>
+      <SEO title="Blog" />
+      <div className="blog">
+        <div className="buttongroup">
+          <input id="work" type="radio" value="work" name="market" onChange={changeCategory} checked />
+          <label for="work">Work</label>
+          <input
+            id="misc"
+            type="radio"
+            value="misc"
+            name="market"
+          />
+          <label for="misc">Misc</label>
+        </div>
+        <div className="projects grid">{renderPosts()}</div>
+      </div>
     </Layout>
   )
 }

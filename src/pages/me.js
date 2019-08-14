@@ -53,7 +53,7 @@ const MePage = () => (
             </div>
           </div>
           <div className="me--career block">
-            <h2>Career</h2>
+            <h2>Work</h2>
             <div className="row">
             {skills.map(i => {
               return (
