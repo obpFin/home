@@ -1,3 +1,44 @@
 main > div.blog {
+  .filters {
+    display: flex;
+    margin-bottom: 3rem;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6rem;
+      height: 30px;
+      border: solid 1px grey;
+    }
+  }
+  .buttongroup {
+    margin-bottom: 3rem;
 
+    label {
+      border: 1px solid black;
+      padding: 6px 12px;
+      cursor: pointer;
+      color: #fff;
+      background-color: #777;
+      transition: all 0.2s;
+    }
+
+    label:not(:first-of-type) {
+      border-left: 0;
+    }
+
+    label:hover {
+      background-color: #333;
+    }
+
+    /* Hide the radio button */
+    input[name="market"] {
+      display: none;
+    }
+
+    /* The checked buttons label style */
+    input[name="market"]:checked + label {
+      background-color: #ed6b06;
+    }
+  }
 }

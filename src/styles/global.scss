@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
-@import './mixins';
-@import './blogPost';
-@import './me';
+@import 'mixins';
+@import 'blogPost';
+@import 'me';
+@import 'blog';
+
 
 h1, h2, h3, p, li, a, i {
   font-family: 'Source Sans Pro', sans-serif;
