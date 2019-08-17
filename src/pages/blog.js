@@ -42,20 +42,22 @@ const BlogPage = () => {
       <SEO title="Blog" />
       <div className="blog">
         <div className="buttongroup">
-          <input id="work" type="radio" value="work" name="market" onChange={changeCategory} checked />
-          <label for="work">Work</label>
-          <input
+            <input
             id="misc"
             type="radio"
-            value="misc"
-            name="market"
-          />
-          <label for="misc">Misc</label>
+              value="work"
+              name="market"
+              onChange={changeCategory}
+              checked
+            />
+            <label htmlFor="work">Work</label>
+            <input id="misc" type="radio" value="misc" name="market" />
+            <label htmlFor="misc">Misc</label>
+          </div>
+          <div className="projects grid">{renderPosts()}</div>
         </div>
-        <div className="projects grid">{renderPosts()}</div>
-      </div>
-    </Layout>
-  )
-}
+      </Layout>
+    )
+  }
 
 export default BlogPage
