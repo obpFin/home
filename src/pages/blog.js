@@ -23,7 +23,7 @@ class BlogPage extends React.Component {
 
   isInActiveCategory = post => post.node.frontmatter.category == this.state.activeFilter
 
-  changeCategory = name => this.setState({ activeFilter: blogFilters[name] })
+  changeCategory = category => this.setState({ activeCategory: blogCategories[category] })
     
   renderPosts = () => {
     const data = this.props.data
