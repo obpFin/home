@@ -8,7 +8,7 @@ export const ButtonGroup = props => (
       type="radio"
       value="work"
       name="market"
-      onChange={() => props.changeFilter("work")}
+      onChange={() => props.changeCategory("work")}
       checked={props.active == "work"}
     />
     <label htmlFor="work">Work</label>
@@ -18,7 +18,7 @@ export const ButtonGroup = props => (
       type="radio"
       value="misc"
       name="market"
-      onChange={() => props.changeFilter("misc")}
+      onChange={() => props.changeCategory("misc")}
       checked={props.active == "misc"}
     />
     <label htmlFor="misc">Misc</label>
