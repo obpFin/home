@@ -7,10 +7,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hello</h1>
-    <p>This is a very unfinished version you know</p>
-    <div style={{ maxWidth: '300px', marginTop: '10vh'}}>
-      <Image filename="gatsby-astronaut.png"/>
+    <div className="index">
+      <h1>Hello</h1>
+      <p>This is a very unfinished version you know</p>
+      <div style={{ marginTop: "5vh" }}>
+        <Image filename="drift.jpg" />
+      </div>
     </div>
   </Layout>
 )

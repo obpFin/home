@@ -72,6 +72,11 @@ footer {
       margin-left: 0;
       padding: 0 2rem;
     }
+    div.index {
+      .gatsby-image-wrapper {
+        width: 100%;
+      }
+    }
   }
 
   .content {
