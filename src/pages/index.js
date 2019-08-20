@@ -8,13 +8,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index">
-      <h1>Hello</h1>
-      <p>This is a very unfinished version you know</p>
-      <div style={{ marginTop: "5vh" }}>
+      <h1>Hello!</h1>
+      <div>
         <Image filename="drift.jpg" />
       </div>
     </div>
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage  
