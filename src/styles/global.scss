@@ -6,8 +6,11 @@
 @import 'me';
 @import 'blog';
 
+h1, h2, h3 {
+  @include site-title;
+}
 
-h1, h2, h3, p, li, a, i, label {
+p, li, a, i, label {
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1.2px;
   &.mono {
@@ -73,8 +76,32 @@ footer {
       padding: 0 2rem;
     }
     div.index {
+      h1 {
+        position: absolute;
+        top: 16rem;
+        color: white;
+        z-index: 1;
+        padding: 0 1rem;
+        font-weight: bolder;
+        @media only screen and (max-width: 720px) {
+          font-size: 3rem;
+        }
+        @media only screen and (min-width: 620px) {
+          padding: 0 2rem;
+        }
+        @media only screen and (max-width: 620px) {
+          font-size: 2rem;
+        }
+        @media only screen and (max-width: 480px) {
+          font-size: 2rem;
+          top:8rem;
+        }
+      }
       .gatsby-image-wrapper {
-        width: 100%;
+        width: 75%;
+        @media only screen and (max-width: 620px) {
+          width: 100%;
+        }
       }
     }
   }
